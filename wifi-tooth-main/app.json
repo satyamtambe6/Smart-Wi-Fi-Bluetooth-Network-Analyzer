@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Wi-Fitooth",
+    "slug": "Wi-Fitooth",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyC98F-hk_8VYnkSLGDgh8REHUF1Vl5N2R0"
+        }
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.signalscope.app",
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.INTERNET"
+      ]
+    },
+    "plugins": [
+      "react-native-wifi-reborn",
+      "react-native-ble-plx",
+      [
+        "with-rn-bluetooth-classic",
+        {
+          "peripheralUsageDescription": "SignalScope uses Bluetooth to find nearby devices.",
+          "alwaysUsageDescription": "SignalScope uses Bluetooth to find nearby devices.",
+          "protocols": [
+            "com.signalscope.app"
+          ]
+        }
+      ],
+      [
+        "react-native-maps",
+        {
+          "androidGoogleMapsApiKey": "AIzaSyC98F-hk_8VYnkSLGDgh8REHUF1Vl5N2R0"
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "320bf016-a760-440e-99f2-3c14979d12cb"
+      }
+    }
+  }
+}

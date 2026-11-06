@@ -1,0 +1,36 @@
+{
+  "name": "wi-fitooth",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~57.0.30",
+    "expo-dev-client": "~57.0.20",
+    "expo-location": "~57.0.21",
+    "expo-status-bar": "~57.0.1",
+    "lucide-react-native": "^1.55.0",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-ble-plx": "^3.5.1",
+    "react-native-bluetooth-classic": "^1.73.0-rc.17",
+    "react-native-maps": "1.27.2",
+    "react-native-svg": "15.15.4",
+    "react-native-webview": "13.16.1",
+    "react-native-wifi-reborn": "^4.13.6",
+    "with-rn-bluetooth-classic": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~57.0.2",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "expo lint"
+  },
+  "private": true
+}
